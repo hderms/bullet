@@ -9,6 +9,7 @@ gem 'sqlite3'
 gem 'mysql2'
 gem 'activerecord-import'
 gem 'mongoid', '3.0.9'
+gem 'uniform_notifier', :git => 'git@github.com:hderms/uniform_notifier.git'
 
 gem "rspec"
 gem "guard"
