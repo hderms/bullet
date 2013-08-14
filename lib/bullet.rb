@@ -28,7 +28,7 @@ module Bullet
     attr_writer :enable, :n_plus_one_query_enable, :unused_eager_loading_enable, :counter_cache_enable
     attr_reader :notification_collector, :whitelist
 
-    delegate :alert=, :console=, :growl=, :rails_logger=, :xmpp=, :airbrake=, :to => UniformNotifier
+    delegate :alert=, :irc=, :console=, :growl=, :rails_logger=, :xmpp=, :airbrake=, :to => UniformNotifier
 
     DETECTORS = [ Bullet::Detector::NPlusOneQuery,
                   Bullet::Detector::UnusedEagerLoading,
